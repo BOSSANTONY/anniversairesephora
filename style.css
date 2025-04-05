@@ -27,8 +27,9 @@ body {
   }
   
   .heart-frame {
-    width: 200px;
-    height: 200px;
+    width: 60vw;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
     margin: 0 auto 20px;
     clip-path: path("M100,30 C120,0 200,0 200,70 C200,140 100,200 100,200 C100,200 0,140 0,70 C0,0 80,0 100,30 Z");
     overflow: hidden;
@@ -40,7 +41,9 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
   }
+  
   
   .message {
     font-size: 1.2em;
