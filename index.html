@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joyeux Anniversaire Séphora 💙</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 🎵 Musique douce -->
+  <audio autoplay loop>
+    <source src="1827_Naza - Happy Birthday SHOW2BABI.COM.mp3" type="audio/mp3">
+    Ton navigateur ne supporte pas l'audio.
+  </audio>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <div class="container">
+    <h1>💙 Joyeux Anniversaire Séphora 💙</h1>
+
+    <div class="heart-frame">
+      <img src="WhatsApp Image 2025-04-04 à 18.22.33_69ef0ac6.jpg" alt="Séphora" />
+    </div>
+
+    <p class="message">
+      En ce jour si spécial, je veux te dire combien tu rends la vie plus belle ✨<br/>
+      Ton sourire, ta douceur, ta beauté… tout en toi illumine mes journées 💫<br/>
+      Joyeux anniversaire mon étoile 🌟, que cette année t’apporte autant de bonheur que tu m’en donnes 💙
+    </p>
+
+    <div class="signature">
+      Avec tout mon cœur,<br/>💌 Ton amoureux Antony Christ Mabiala
+    </div>
+
+    <!-- 💙 Compte à rebours amour -->
+    <div class="timer">
+      Nous sommes ensemble depuis : <span id="daysTogether">5</span> jours 💞
+    </div>
+
+    <!-- 💌 Bouton d'amour -->
+    <button class="love-button" onclick="alert('Je t’aime fort Séphora 💙💙💙')">
+      💌 Je t’aime
+    </button>
+
+    <div class="coeurs">💙💙💙💙💙</div>
+  </div>
+
+  <!-- 🎉 Script confettis + compteur -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    // 🎉 Animation de confettis
+    const duration = 5 * 1000;
+    const end = Date.now() + duration;
+    (function frame() {
+      confetti({
+        particleCount: 3,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0 }
+      });
+      confetti({
+        particleCount: 3,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1 }
+      });
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      }
+    })();
+
+    // ❤️ Compteur de jours ensemble (change la date ici)
+    const startDate = new Date("2025-03-25");
+    const today = new Date();
+    const diffTime = Math.abs(today - startDate);
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    document.getElementById('daysTogether').textContent = diffDays;
+  </script>
+</body>
+</html>
