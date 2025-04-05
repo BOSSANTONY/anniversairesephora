@@ -33,10 +33,6 @@
       Avec tout mon cœur,<br/>💌 Ton amoureux Antony Christ Mabiala
     </div>
 
-    <!-- 💙 Compte à rebours amour -->
-    <div class="timer">
-      Nous sommes ensemble depuis : <span id="daysTogether">5</span> jours 💞
-    </div>
 
     <!-- 💌 Bouton d'amour -->
     <button class="love-button" onclick="alert('Je t’aime fort Séphora 💙💙💙')">
@@ -69,13 +65,6 @@
         requestAnimationFrame(frame);
       }
     })();
-
-    // ❤️ Compteur de jours ensemble (change la date ici)
-    const startDate = new Date("2025-03-25");
-    const today = new Date();
-    const diffTime = Math.abs(today - startDate);
-    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-    document.getElementById('daysTogether').textContent = diffDays;
   </script>
 </body>
 </html>

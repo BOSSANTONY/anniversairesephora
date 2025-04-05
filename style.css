@@ -3,9 +3,10 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #cce0ff, #e6f0ff);
-    overflow: hidden;
     text-align: center;
+    overflow-x: hidden; /* ✅ On empêche juste le scroll horizontal */
   }
+  
   
   .container {
     background-color: #ffffffcc;
